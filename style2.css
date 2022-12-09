@@ -1,0 +1,110 @@
+body{
+    background-color: #000000;
+}
+
+.form-title {
+    color: #000000;
+    font-size: 1.8em;
+}
+
+.separator40 {
+    padding-top: 40px;
+}
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.separator20 {
+    padding-top: 20px;
+}
+
+.mint-but {
+    width: 200px;
+    height: 50px;
+    background-color: #000000;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+}
+
+.priceUpdate {
+    
+    color: #000000 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none
+}
+
+[role=button],
+button {
+    cursor: pointer
+}
+
+
+#myform {
+    width: 25%;
+}
+
+@media screen and (max-width: 640px) {
+    #myform {
+        width: 90%;
+    }
+}

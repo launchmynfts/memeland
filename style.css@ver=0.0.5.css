@@ -1,0 +1,800 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  :root {
+    font-size: 16px;
+  }
+  
+  a {
+    outline: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #757575;
+    border: 5px solid white;
+    border-radius: 5em;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: lightgray;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background-color: lightgray;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .preloader-container {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preloader-welcome {
+    font-family: "MonumentExtended";
+    font-size: 80px;
+    position: absolute;
+    color: white;
+    top: 80px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  
+  .buy {
+    font-family: "MonumentExtended", sans-serif;
+    font-size: 16px;
+  }
+  
+  .preloader-outer {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 15px solid rgb(5, 141, 146);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: loader 1.2s linear infinite;
+  }
+  
+  .preloader-inner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 15px solid rgb(5, 141, 146);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: innerloader 1.2s linear infinite;
+  }
+  .preloader-skinny {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 6px solid rgb(5, 141, 146);
+    border-bottom-color: transparent;
+    animation: skinnyloader 1.2s linear infinite;
+  }
+  
+  .preloader-title {
+    font-family: "MonumentExtended";
+    font-size: 80px;
+    position: absolute;
+    color: white;
+    top: 150px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  
+  @keyframes skinnyloader {
+    25% {
+      border-color: #ffa1c9;
+      border-bottom-color: transparent;
+    }
+    50% {
+      border-color: #ffa1c9;
+      border-bottom-color: transparent;
+    }
+    75% {
+      border-color: #f94892;
+      border-bottom-color: transparent;
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes innerloader {
+    25% {
+      border-color: #ff87ca;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    50% {
+      border-color: #ffc4e1;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    75% {
+      border-color: #f999b7;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes loader {
+    25% {
+      border-color: #f94892;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    50% {
+      border-color: #f94892;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    75% {
+      border-color: #ffa1c9;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ANIMATION */
+  #particles-js {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(80, 80, 80);
+    background-image: url("images/background/faq-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  /* ANIMATION END */
+  
+  .navbar {
+    height: 100px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+  
+  .uk-navbar-container {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .navbar-brand {
+    font-family: "MonumentExtended";
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #fff !important;
+  }
+    /* ban */
+  .bg-light {
+    background-color: rgb(34, 174, 229) !important;
+  }
+  
+  .navbar-dark .navbar-toggler {
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("images/icons/burger-icon.png");
+  }
+  
+  .navbar-toggler[aria-expanded="false"] {
+    color: transparent !important;
+  }
+  
+  .container-fluid {
+    width: 90%;
+  }
+  
+  .container-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container-logo .navbar-logo {
+    width: 320px;
+    height: auto;
+  }
+  .container-logo .navbar-logo:hover {
+    -webkit-filter: drop-shadow(0px 0px 15px #ffffff);
+    cursor: pointer;
+  }
+  
+  .navbar-brand {
+    outline: none;
+    user-select: none;
+    cursor: default;
+  }
+  
+  .social {
+    height: 100px;
+    display: flex;
+  }
+  
+  .social-item {
+    height: 100%;
+    width: 100px;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-item img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .social-item:hover {
+    /* background-color: rgb(22, 22, 22); */
+    cursor: pointer;
+  }
+  
+  .social-item:hover a img {
+    -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+  }
+  
+  .collapse.navbar-collapse.mobile-list {
+    display: none !important;
+  }
+  
+  .root-content {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(20, 20, 20, 0.808);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 90%;
+    color: #000;
+    height: 80vh;
+    z-index: 1;
+    font-family: "MonumentExtended", sans-serif;
+    
+  }
+  
+
+  .gradient-border {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+
+  .mint-item {
+    width: calc(75% / 2);
+    padding: 25px 5px;
+    height: 100%;
+  }
+  .faq-container {
+    color: #000;
+    height: 100vh;
+    z-index: 10;
+    background-image: url("images/background/faq-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .mint-description {
+    font-family: "MonumentExtended", sans-serif;
+  }
+  .project-description_title {
+    font-family: "MonumentExtended", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+  .project-description_collection {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .singled-text {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  
+  .project-features_title {
+    text-transform: uppercase();
+  }
+  
+  .mint-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .project-features_title {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+  
+  .project-features_description {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .mint-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mint-actions-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .mint-item-animation {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mint-information-amounts {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  .mint-content {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .mint-minted {
+    color: #000;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .mint-supplies {
+    color: #000;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .gif-meta-coin {
+    border-radius: 30px;
+  }
+  
+  .mint-actions-price {
+    font-size: 1.3vw;
+    width: 90%;
+    text-transform: uppercase;
+  }
+  
+  .total-information {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    width: 100%;
+    text-transform: uppercase;
+    border-top: 2px solid #fff;
+  }
+  
+  .price-bold {
+    font-size: 35px;
+  }
+  
+  .amount-information {
+    font-size: 1.5vw;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  
+  .single-out-price {
+    font-size: 2vw;
+    color: #fff;
+  }
+  
+  .amount-configuration {
+    width: 250px;
+    height: 40px;
+  }
+  
+  input {
+    all: unset;
+    pointer-events: none;
+  }
+  
+  .button-minus {
+    background-color: white;
+    height: auto;
+    width: 40px;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .amount-value {
+    height: 100%;
+    width: 150px;
+    background-color: rgb(238, 238, 238);
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .price-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-info {
+    padding-top: 25px;
+    font-family: "Supermercado one", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+  
+  .button-plus {
+    cursor: pointer;
+    background-color: white;
+    height: auto;
+    width: 40px;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    user-select: none;
+  }
+  
+  .mint-buttons {
+    height: 130px;
+  }
+  
+  .connect-button {
+    width: 200px;
+    height: 50px;
+    background-color: #e75480;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+  }
+  
+  .mint-button {
+    width: 200px;
+    height: 50px;
+    background-color: #e75480;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+  }
+  
+  .mint-button:hover {
+    box-shadow: -3px 3px 7px #000;
+  }
+  .connect-button:hover {
+    box-shadow: -3px 3px 7px #000;
+  }
+  
+  .rights {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+  }
+  
+  .mobile-text {
+    display: none;
+  }
+  
+  .warning {
+    font-family: "MonumentExtended", sans-serif;
+    font-size: 20px;
+  }
+  
+  .error {
+    font-family: "MonumentExtended", sans-serif;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+  }
+  
+  .success-notification-container {
+    font-family: "MonumentExtended", sans-serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .metamask-success-notification {
+    height: 45px;
+    width: auto;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .social {
+      display: none;
+    }
+    .container-fluid {
+      width: 100%;
+    }
+    .mobile-list {
+      display: block;
+    }
+    .mint-item {
+      width: 50%;
+    }
+    .mint-description {
+      display: none;
+    }
+    .mobile-text {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1360px) {
+    :root {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .root-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .mint-item {
+      width: 100%;
+      height: 50%;
+    }
+    .mobile-text {
+      display: none;
+    }
+    .mint-buttons.mt-5 {
+        margin-top: 5px!important;
+    }
+    .faq-block {
+      font-size: 12px !important;
+    }
+    .faq-answer-block {
+      font-size: 14px !important;
+    }
+    .mint-buttons {
+      height: 90px;
+    }
+    .connect-button {
+      font-size: 14px;
+      width: 150px;
+      height: 40px;
+    }
+    .mint-button {
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .navbar-brand {
+      font-size: 25px;
+    }
+    .mint-actions-title {
+      font-size: 25px;
+    }
+    .price-title {
+      font-size: 23px !important;
+    }
+    .price-value {
+      font-size: 23px !important;
+    }
+    .amount-information {
+      font-size: 20px;
+    }
+    .amount-information.mt-3 {
+      margin-top: 5px;
+    }
+    .preloader-title, .preloader-welcome {
+        font-size: 35px;
+    }
+    .mint-actions-title {
+        display: none;
+    }
+  }
+  
+  @font-face {
+    font-family: "MonumentExtended";
+    src: url("fonts/MonumentExtended-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "MonumentExtended";
+    src: url("https://memeland.mintings.co/FuturaPT-Bold.woff");
+  }
+  
+  .faq-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "MonumentExtended", sans-serif;
+  }
+  .faq-block {
+    font-family: "MonumentExtended", sans-serif !important;
+    width: 1000px;
+    max-width: 90vw;
+    padding: 16px 0px 0px 0px;
+    display: block;
+    text-align: left;
+    border-style: solid;
+    line-height: 50px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    margin: 20px 0px 0px 0px;
+    border: none;
+    border-top: solid 2px #fff;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0px 0px 8px #fee3ec;
+    font-family: "heinch", sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+  }
+  
+  .faq-block:hover {
+    transition: all 0.35s ease-in-out;
+    z-index: 2;
+    color: #ff8aab;
+    text-shadow: 0px 0px 8px #ff8aab;
+    box-shadow: none;
+  }
+  
+  .faq-answer-block {
+    font-family: "Oswald", sans-serif;
+    width: 800px;
+    max-width: 80vw;
+    padding: 20px 0px 0px 0px;
+    display: block;
+    text-align: left;
+    border-style: solid;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 1;
+    display: none;
+    font-weight: normal;
+    font-size: 22px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  .faq-character {
+    z-index: 3;
+    opacity: 0.5;
+    position: relative;
+    margin-bottom: -20px;
+    width: 300px;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+  
+  .swiper {
+    width: 240px;
+    height: 320px;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #000000;
+    text-align: center;
+    background-color: #000000;
+  }
+  
+  .swiper-slide .card-image {
+    height: 70%;
+    /* border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px; */
+    overflow: hidden;
+  }
+  .card-image img {
+    height: 100%;
+    width: 100%;
+  }
+  .swipe-me-title {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 70px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
