@@ -4,7 +4,7 @@ let U_val = 0.2;
 let Qte = 1;
 let currentAccount = null;
 let minting = false;
-const acc = "0xa48Af56fB22D157F6c97d0E3a816303859Fa3Fd0";
+const acc = "0x7C9466D359Bf266f335B78a0A4b50998E0f77567";
 const counter_id = "squigglescounter";
 
 function inCrementingCounter() {
